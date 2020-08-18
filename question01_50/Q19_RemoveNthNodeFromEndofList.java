@@ -8,7 +8,7 @@ package question01_50;
  * 3. when fast pointer reaches the end of the list, the element pointed by slow pointer can be deleted
  */
 
-public class RemoveNthNodeFromEndofList {
+public class Q19_RemoveNthNodeFromEndofList {
     private static class ListNode {
         int val;
         ListNode next;

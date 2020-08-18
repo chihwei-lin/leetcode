@@ -13,7 +13,7 @@ import java.util.Map;
  * 3. 如果
  */
 
-public class LongestSubstringWithoutRepeatChar {
+public class Q03_LongestSubstringWithoutRepeatChar {
     public static int lengthOfLongestSubstring(String s) {      // 2ms, faster than 99.86%
         if(s.length()==1)
             return 1;

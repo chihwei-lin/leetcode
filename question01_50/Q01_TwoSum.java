@@ -19,7 +19,7 @@ import java.util.Map;
  */
 
 
-public class TwoSum {
+public class Q01_TwoSum {
     public static int[] twoSum(int[] nums, int target) {
 
         // 1. create a map

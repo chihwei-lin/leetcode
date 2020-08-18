@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 
-public class ThreeSum {
+public class Q15_ThreeSum {
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 

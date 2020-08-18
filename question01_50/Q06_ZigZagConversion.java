@@ -14,7 +14,7 @@ import java.util.List;
  *
  */
 
-public class ZigZagConversion {
+public class Q06_ZigZagConversion {
 
     public static String convert(String s, int numRows) {
         StringBuilder[] stringList = new StringBuilder[numRows];    // 存储 Z 形字符串

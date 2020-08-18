@@ -11,7 +11,7 @@ package question01_50;
  *
  */
 
-public class MedianofTwoSortedArrays {
+public class Q04_MedianofTwoSortedArrays {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
         return 0.0;
