@@ -2,10 +2,11 @@ package question01_50;
 
 /**
  * 19. Remove Nth Node From End of List
+ * 移除倒数第 n 个节点
  *
- * 1. initialize two pointers as 0 (slow, fast)
- * 2. move fast pointer n times ahead slow (gap == n)
- * 3. when fast pointer reaches the end of the list, the element pointed by slow pointer can be deleted
+ * 双指针问题
+ * 1：利用第二指针移动到与第一指针差距为 n
+ * 2：当第二指针移动到尾端，则第一指针指向的元素就是要被删除的元素
  */
 
 public class Q19_RemoveNthNodeFromEndofList {
@@ -30,18 +31,24 @@ public class Q19_RemoveNthNodeFromEndofList {
         ListNode dummy = new ListNode();
         dummy.next = head;
 
-        ListNode n1 = dummy, n2 = dummy;
+        ListNode pointerA = dummy;
+        ListNode pointerB = dummy;
 
-        for (int i = 0; i <= n; i++) {      // move n2 to index n
-            n2 = n2.next;
+        // 边界问题
+        if(head == null || n < 0)    return null;
+
+        // 移动第二指针，让第一与第二指针的差距为 n
+        for(int i=0;i<n;i++){
+            pointerB = pointerB.next;
         }
 
-        while(n2 != null){
-            n1 = n1.next;
-            n2 = n2.next;
+        while(pointerB.next != null){
+            pointerA = pointerA.next;
+            pointerB = pointerB.next;
         }
 
-        n1.next = n1.next.next;
+        pointerA.next = pointerA.next.next;
+
         return dummy.next;
     }
 
