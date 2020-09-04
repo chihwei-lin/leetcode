@@ -1,9 +1,10 @@
 package question01_50;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class Q39_CmobinationSum {
+public class Q39_CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
 
